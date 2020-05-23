@@ -110,14 +110,9 @@ function style(feature) {
 
             layer.bindPopup(popupContent,customOptions);
 
-            layer.on('mouseover', function() {
-              this.openPopup();
-              limitesCommunales.setStyle(style); //resets layer colors
-              layer.setStyle(highlight);  //highlights selected.
-            });
-            layer.on('mouseout', function () {
-              this.closePopup();
-              layer.setStyle(styleMouseout);
+            layer.on("click", function (e) {
+                limitesCommunales.setStyle(style); //resets layer colors
+                layer.setStyle(highlight);  //highlights selected.
             });
 		  }
 
