@@ -2,6 +2,6 @@
 
 Ce repository sert, pour l'instant, de test à une carte leaflet, affichant un GeoJson stocké via Github.
 
-Version avec popup au clic : https://aurelienchaumet.github.io/popup_click.html
+<li><a href="https://aurelienchaumet.github.io/html/popup_click.html">Website</a></li>"Version avec popup au clic" 
 
-Version avec popup au survol : https://aurelienchaumet.github.io/popup_survol.html
+<li><a href="https://aurelienchaumet.github.io/html/popup_survol.html">Website</a></li>"Version avec popup au survol" 
