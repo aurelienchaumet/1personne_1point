@@ -43,7 +43,7 @@
 
 <script>
 
-var url = 'https://aurelienchaumet.github.io/index.html/communes_pop.geojson';  // pointe vers le fichier contenant les limites communales et la population
+var url = 'https://aurelienchaumet.github.io/data/communes_pop.geojson';  // pointe vers le fichier contenant les limites communales et la population
 
 // Crée l'objet map et définit le zoom min et max, les limites max pour bouger la carte et la vue de départ
 let map = L.map('map',{
@@ -125,7 +125,7 @@ function style(feature) {
 var limitesCommunales = L.geoJson(null, {onEachFeature: forEachFeature, style: style});
 
 //Peuple la couche limitesCommunales avec le fichier pointé sur url
-	$.getJSON("https://github.com/aurelienchaumet/Population17/blob/master/communes_pop.geojson", function(data) {
+	$.getJSON(url, function(data) {
         limitesCommunales.addData(data);
     });
 
